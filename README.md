@@ -5,7 +5,4 @@ The purpose is to develop synthetic training data that can be manipulated and di
 
 ## Common Terms and Acronyms
 
-Mception = molecular perception
-mConstruct = matrix construct of molecule
-m = matrix or molecule
-md = multi-dimensional
+Mception = molecular perception; mConstruct = matrix construct of molecule; m = matrix or molecule; md = multi-dimensional
