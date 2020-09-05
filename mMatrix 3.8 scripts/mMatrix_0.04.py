@@ -18,7 +18,7 @@ md = 2 * m - 1
 z = md * 3
 
 time = float(r * c * 2 * md)
-print('\nThis may take around {} min(s) to complete an iPad A7 processor.'.
+print('\nThis may take around {} min(s) to complete.'.
 						format('{0:.2f}'.format(time / 120000 + (r + c + 2 * md) / 300)))
 
 mMatrix = np.array(np.zeros((z, z), dtype=np.float))
