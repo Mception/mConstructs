@@ -1,18 +1,25 @@
 """
 Created on Thu Nov 30 11:07:03 2017 - py2.7
-Updated on Thu Sep 03 23:06:00 2020 - py3.6
+Updated on Sat Sep 05 14:22:00 2020 - py3.6
 @author: DrM @ Lincoln, UK
 """
 
 import numpy as np
 
-r = int(input("Enter no. of row-atom-charges for binding region (>=2): "))
-c = int(input("Enter no. of col-atom-charges for binding region (>=2): "))
+r = int(input("Enter no. of row-atom-charges for binding region (>=3): "))
+c = int(input("Enter no. of col-atom-charges for binding region (>=3): "))
 m = int(input("Enter longest no. of linear atoms for molecule (>=3): "))
 
-
+if r < 3:
+	r = 3
+if c < 3:
+	c = 3
 if m < 3:
 	m = 3
+if m > r:
+	m = r
+if m > c:
+	m = c
 
 md = 2 * m - 1
 z = md * 3
